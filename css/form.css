@@ -26,6 +26,7 @@
 }
 
 .form__input {
+  width: 30%;
   margin-left: 16px;
   padding: 8px;
   border: 2px solid rgb(120, 165, 50);
