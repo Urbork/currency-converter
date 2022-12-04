@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./js/main.js"></script>
+    <title>Kalkulator walutowy</title>
+  </head>
+  <body class="body">
+    <h1>Kalkulator walutowy</h1>
+    <form class="form js-form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Chcę wymienić</legend>
+        <p>
+          <label class="form__label">
+            Kwota w PLN*:
+            <input
+              class="form__input js-amount"
+              type="number"
+              placeholder="podaj kwotę"
+              min="0"
+              step="0.01"
+              autofocus
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label class="form__label">
+            Chcę otrzymać:
+            <select class="form__input js-currency" name="currency">
+              <option value="EUR">EUR - euro</option>
+              <option value="USD">USD - dolar amerykański</option>
+              <option value="GBP">GBP - funt brytyjski</option>
+              <option value="CHF">CHF - frank szwajcarski</option>
+            </select>
+          </label>
+        </p>
+      </fieldset>
+      <p>* - Pole obowiązkowe</p>
+      <p>
+        <button class="form__button js-submit">Przelicz</button>
+        <button class="form__button form__button--reset js-reset" type="reset">
+          Wyczyść
+        </button>
+      </p>
+      <p>Wynik: <strong class="js-result">N/A</strong></p>
+    </form>
+  </body>
+</html>
