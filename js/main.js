@@ -27,7 +27,6 @@ formElement.addEventListener("submit", (event) => {
       break;
     case "CHF":
       currencyRate = chfRate;
-      break;
   }
 
   let result = amount / currencyRate;
