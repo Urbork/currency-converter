@@ -12,5 +12,11 @@ html {
   min-width: 320px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  background-color: whitesmoke;
+  background-image: url("../images/backgroundimage.webp");
+}
+
+.heading {
+  padding: 16px;
+  color: whitesmoke;
+  background-color: #222;
 }
