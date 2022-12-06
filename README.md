@@ -4,7 +4,7 @@ It is a very simple currency calculator.
 
 ## DEMO
 
-https://urbork.github.io/kantor/
+https://urbork.github.io/currency-converter/
 
 ![preview](https://i.postimg.cc/T2qpWnc3/exchange-preview.gif)
 
